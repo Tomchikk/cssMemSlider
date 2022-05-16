@@ -1,0 +1,316 @@
+* {
+  background: rgb(184, 184, 184);
+}
+
+
+.slider-ctn {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    padding-top: 57%;
+    display: flex;
+    justify-content: center;
+}
+
+/* @media (max-width: 1000px) {
+  .slider-ctn { 
+    height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .slider-ctn { 
+    height: 230px;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .slider-ctn { 
+    height: 200px;
+  }
+}
+
+@media (max-width: 440px) {
+  .slider-ctn { 
+    height: 150px;
+  }
+}
+
+@media (max-width: 320px) {
+  .slider-ctn { 
+    height: 90px;
+  }
+} */
+
+
+.slider img {
+  object-fit: cover;
+  width: 100%; 
+}
+
+
+
+.slider-ctn .slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+  padding: 0 0;
+  margin: 0 0;
+}
+.slider-ctn .slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0 0;
+}
+
+
+
+.slider-ctn img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;  
+  margin: 30px;
+}
+
+/* @media (max-width: 1000px) {
+  .slider-ctn img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .slider-ctn img {
+    height: 230px;
+  }
+}
+
+@media (max-width: 650px) {
+  .slider-ctn img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 440px) {
+  .slider-ctn img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 320px) {
+  .slider-ctn img {
+    height: 90px;
+  }
+} */
+
+.slider-navigation {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+
+/* @media (max-width: 320px) {
+  .slider-navigation {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+} */
+
+.slider-navigation .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ddd;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: transform 0.5s ease; 
+}
+
+/* @media (max-width: 320px) {
+  .slider-navigation .dot {
+    height: 7px;
+    width: 7px;
+  }
+} */
+a.dota {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.slider-navigation .dot:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+a.dota.active span {
+  background-color: rgb(184, 184, 184);
+  border: 2px solid rgb(255, 255, 255);  
+}
+
+.slider-navigation .dot.active:hover {
+  background-color: rgb(184, 184, 184);
+  border: 2px solid #ddd;
+}
+
+.slideText {
+  width: 100px;
+  font-size: 18px;
+}
+
+/* @media (max-width: 650px) {
+  .slideText {
+    font-size: 15px;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .slideText {
+    font-size: 10px;
+    margin: 30px 0 0 0;
+    width: 100%;
+  }
+} */
+
+
+
+.carusel__container {
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid rgb(184, 184, 184);
+  overflow: hidden;
+  border-radius: 10px;
+  /* height: 500px; */ 
+}
+
+/* @media (max-width: 1000px) {
+  .carusel__container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 800px) {
+  .carusel__container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 650px) {
+  .carusel__container {
+    width: 350px;
+  }
+}
+
+@media (max-width: 440px) {
+  .carusel__container {
+    width: 280px;
+  }
+}
+
+@media (max-width: 320px) {
+  .carusel__container {
+    width: 150px;
+  }
+} */
+
+.carusel__container img {
+  display: block;
+  width: 100%;
+  padding: 0 0;
+  margin: 0 0;
+  border-radius: 10px;
+}
+
+
+
+
+/* Cлайдер *
+.slider{
+  max-width: 40%;
+  position: relative;
+  margin: auto;
+  height: 300px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  
+}
+/* Картинка мастабируется по отношению к родительскому элементу 
+.slider .item img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+
+/* Кружочки 
+.slider-dots {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 150px;
+  
+  
+  
+}
+.slider-dots_item{      
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: transform 0.6s ease;
+  
+  
+  
+}
+.active,
+.slider-dots_item:hover {
+  background-color: rgb(255, 255, 255);
+  
+}
+
+
+* {
+  background: rgb(184, 184, 184);
+}
+
+
+
+/* Анимация слайдов 
+.slider .item {
+  
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
+}
